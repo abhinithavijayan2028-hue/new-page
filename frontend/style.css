@@ -1,0 +1,144 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f5fa;
+    color: #25334a;
+}
+
+header {
+    background: #123c69;
+    color: white;
+    padding: 20px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand p {
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.status {
+    background: #d8f5e5;
+    color: #167443;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+main {
+    padding: 35px 6%;
+}
+
+.welcome {
+    margin-bottom: 30px;
+}
+
+.welcome h1 {
+    margin-bottom: 10px;
+    color: #123c69;
+}
+
+.role-section,
+.medicine-section {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+.role-container {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+button {
+    background: #1769aa;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0e477a;
+}
+
+#selectedRole {
+    color: #1769aa;
+    font-weight: bold;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px #00000010;
+}
+
+.card h3 {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.card h1 {
+    color: #1769aa;
+}
+
+input {
+    padding: 12px;
+    width: 65%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin: 15px 10px 15px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #123c69;
+    color: white;
+    margin-top: 30px;
+}
+
+@media(max-width: 750px) {
+    .dashboard {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    header {
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width: 450px) {
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        padding: 20px 4%;
+    }
+
+    input {
+        width: 100%;
+    }
+}

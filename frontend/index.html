@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXORITHAM | Medical Store</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="brand">
+            <h2>NEXORITHAM</h2>
+            <p>Medical Store Management</p>
+        </div>
+
+        <span class="status">System Online</span>
+    </header>
+
+    <main>
+
+        <section class="welcome">
+            <h1>Medical Store Dashboard</h1>
+            <p>Manage medicines, inventory and sales efficiently.</p>
+        </section>
+
+        <section class="role-section">
+            <h3>Select User Module</h3>
+
+            <div class="role-container">
+                <button onclick="selectRole('Admin')">
+                    Admin
+                </button>
+
+                <button onclick="selectRole('Staff')">
+                    Staff
+                </button>
+
+                <button onclick="selectRole('Customer')">
+                    Customer
+                </button>
+            </div>
+
+            <p id="selectedRole">Select your module to continue.</p>
+        </section>
+
+        <section class="dashboard">
+
+            <div class="card">
+                <h3>Total Medicines</h3>
+                <h1 id="medicineCount">--</h1>
+            </div>
+
+            <div class="card">
+                <h3>Available Stock</h3>
+                <h1 id="stockCount">--</h1>
+            </div>
+
+            <div class="card">
+                <h3>Low Stock Items</h3>
+                <h1 id="lowStock">--</h1>
+            </div>
+
+            <div class="card">
+                <h3>Today's Sales</h3>
+                <h1 id="salesCount">--</h1>
+            </div>
+
+        </section>
+
+        <section class="medicine-section">
+
+            <h2>Medicine Search</h2>
+
+            <input
+                type="text"
+                id="searchMedicine"
+                placeholder="Enter medicine name..."
+            >
+
+            <button onclick="searchMedicine()">
+                Search
+            </button>
+
+            <p id="searchResult"></p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 NEXORITHAM Team | Medical Store Management</p>
+    </footer>
+
+    <script src="/script.js"></script>
+
+</body>
+</html>
